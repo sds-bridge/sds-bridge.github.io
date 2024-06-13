@@ -109,11 +109,11 @@
               <source src="./video_assets/teaser/website_teaser_crop.mp4" type="video/mp4">
             </video>
 
-            <!-- <div class="is-size-5 publication-authors">
+            <div class="is-size-5 publication-authors">
               <span class="author-block">
                 TLDR: Higher quality SDS without compromising performance.
               </span>
-            </div> -->
+            </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -141,7 +141,7 @@
                     <span>arXiv</span>
                   </a>
                 </span>
-                <!-- <span class="link-block">
+                <span class="link-block">
                   <a href=""
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -155,7 +155,7 @@
                     </span>
                     <span>Coming Soon</span>
                   </a>
-                </span> -->
+                </span>
                 <span class="link-block">
                   <a href="https://rich-text-to-image.github.io/#bibtex"
                     class="external-link button is-normal is-rounded is-dark">
@@ -230,17 +230,39 @@
 
   <section class="hero is-small">
     <div class="hero-body">
+      <div class="container is-max-desktop has-text-centered">
+        <div class="container has-text-justified">
+          <p>
+            <span class="title is-2 publication-title" style="font-size:1.5em;">Problem Setting</span>
+            <div class="container has-text-centered">
+              <video id="dollyzoom" autoplay="" muted="" loop="" playsinline="" width="80%">
+                <source src="./video_assets/techfigure1/fig1_v5.mp4" type="video/mp4">
+              </video>
+              <div class="container has-text-justified" >
+                <span style="font-size:0.85em;">SDS methods optimized images toward the natural image manifold. 
+                  We can compute this gradient on renders from random 3D viewpoints to generate 3D objects.</span>
+              </div>
+              <br><br>
+            </div>
+            <span style="font-size:1.1em;">Score distillation sampling<sup><a href="https://dreamfusion3d.github.io/">1</a></sup> (SDS) has proven to be an important tool, enabling
+              the use of large-scale diffusion priors for tasks operating in data-poor domains. SDS and its variants optimize parametric images, i.e., images produced by a model like NeRF, with a
+              pre-trained diffusion model. Such a method is valuable because it is applicable across many data-poor domains, including 3D. <br><br></span>
+              <span style="font-size:1.1em;"> SDS is known to suffer from several
+                significant artifacts, such as oversaturation and oversmoothing. We present an analytical framework for the SDS family of methods and a simple, efficient method to rectify these artifacts. <br><br></span>
+            <br>
+          </p>
+        </div>
+      </div>
 
-      <div class="columns is-centered" id="weinvestigate" style="display: true;">
-        <div class="column">
-          <div class="content has-text-centered">
+      <!-- <div class="columns is-centered" id="weinvestigate" style="display: true;">
+        <div class="column"> -->
+        <div class="container is-max-desktop has-text-centered">
+          <div class="content container has-text-centered">
             <video id="dollyzoom" autoplay="" muted="" loop="" playsinline="" width="80%">
               <source src="./video_assets/fig2_2.mp4" type="video/mp4">
             </video>
           </div>
-        </div>
-        <div class="column">
-          <div class="container has-text-justified">
+        <div class="container has-text-justified">
             <p>
               <span style="font-size:1.1em;"> We investigate the core issues with SDS by casting it as a Schrödinger Bridge (SB) problem, which finds the optimal
                 transport between two distributions. Specifically, these optimal paths connect the current optimized image distribution (e.g., renderings from a NeRF) to a target distribution (e.g., text-conditioned
@@ -249,7 +271,8 @@
             </p>
           </div>
         </div>
-      </div>
+        <!-- </div>
+      </div> -->
 
       <div class="container is-max-desktop has-text-centered">
       <div class="container has-text-justified">
