@@ -27,33 +27,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Playfair+Display:ital,wght@0,490;1,490&display=swap" rel="stylesheet">
 
-
-  <!-- Google tag (gtag.js) -->
-  <script async="" src="./assets/js"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-9VZKE74FPW');
-  </script>
-  <title>Expressive Text-to-Image Generation with Rich Text</title>
+  <title>Score Distillation as a Bridge Between Image Distributions</title>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-  <link href="./assets/css" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <style>
+  .hr {width: 100%; height: 1px; margin: 48px 0; background-color: #d6dbdf;}
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/bulma.min.css">
   <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./assets/css/tab_gallery.css">
-  <!-- <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css"> -->
-  <link rel="stylesheet" href="./assets/css/academicons.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="./assets/css/index.css">
-  <link rel="stylesheet" href="./assets/css/juxtapose.css">
-  <link rel="stylesheet" href="./assets/css/image_card_fader.css">
-  <link rel="stylesheet" href="./assets/css/image_card_slider.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  
+  <!-- custom css file  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/twentytwenty.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/fontawesome.all.min.js"></script>
 
   <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -72,7 +66,7 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">Score Distillation as a Bridge Between Image Distributions</h1>
+            <h1 class="title is-2 publication-title"><b>Score Distillation as a Bridge Between Image Distributions</b></h1>
 
             <div class="is-size-5 publication-authors">
               <span class="author-block">
@@ -293,7 +287,7 @@
     </div>
   </section>
 
-  <!-- CONSISTENCY -->
+  <!-- Text-to-3D -->
   <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
@@ -364,41 +358,57 @@
           <div class="columns is-centered is-vcentered">
             <div class="container has-text-centered">
               <div class="column ">
-                  <h4 class="title is-4 has-text-centered" id="sect-2-prompt">A pineapple, detailed, high resolution, high quality, sharp.</h4>
+                  <h4 class="title is-5 has-text-centered" id="sect-2-prompt">A pineapple, detailed, high resolution, high quality, sharp.</h4>
                 </div>
               </div>
           </div>
       </div>
   </section>
 
+  <!-- Painting to Real -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+            <div class="container has-text-centered">
+              <h2 class="title is-2 publication-title">Painting to Real </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-6">
+              <div class="content has-text-justified">
+                <div class="item">
+                  <div class="twentytwenty-container" data-before-label="Input" data-orientation="horizontal" ratio="1.0">
+                    <div class="video">
+                      <!-- <video muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./video_assets/0001-input-general.mp4" type="video/mp4">
+                      </video>  -->
+                      <img src="./video_assets/paint2real/homer.png" />
+                    </div>
+                    <div class="video">
+                      <video muted autoplay="autoplay" loop="loop" width="100%">
+                        <source src="./video_assets/paint2real/homer.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
   <section class="section">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-full-width">
           <div class="container is-max-desktop">
-            <div class="columns is-centered">
-              <div class="column is-full-width">
-                <h2 class="title is-3 has-text-centered">References</h2>
-                <div class="content has-text-justified">
-                  <p>
-                  </p>
-                  [1] Amir Hertz, Ron Mokady, Jay Tenenbaum, Kfir Aberman, Yael Pritch, and Daniel Cohen-Or. <a
-                    href="https://arxiv.org/abs/2208.01626">Prompt-to-prompt image editing with cross attention
-                    control.</a> arXiv:2208.01626, 2022.<br>
-                  [2] Tim Brooks, Aleksander Holynski, and Alexei A Efros. <a
-                    href="https://arxiv.org/abs/2211.09800">Instructpix2pix: Learning to follow image editing
-                    instructions.</a> CVPR, 2023<br>
-                  [3] Hila Chefer, Yuval Alaluf, Yael Vinker, Lior Wolf, and Daniel Cohen-Or. <a
-                    href="https://arxiv.org/abs/2301.13826">Attend-and-excite: Attention-based semantic guidance for
-                    text-to-image diffusion models.</a>arXiv preprint arXiv:2301.13826, 2023.<br>
-                  [4] Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Björn Ommer. <a
-                    href="https://openaccess.thecvf.com/content/CVPR2022/html/Rombach_High-Resolution_Image_Synthesis_With_Latent_Diffusion_Models_CVPR_2022_paper.html6">High-resolution
-                    image synthesis with latent diffusion models.</a>CVPR, 2022<br>
-                  <p></p>
-                </div>
-                <!-- Prompt Interpolation image -->
-              </div>
-            </div>
 
             <!-- Acknowledgements. -->
             <div class="columns is-centered">
@@ -406,10 +416,7 @@
                 <h2 class="title is-3 has-text-centered">Acknowledgment</h2>
                 <div class="content has-text-justified">
                   <p>
-                    We thank Mia Tang, Aaron Hertzmann, Nupur Kumari, Gaurav Parmar, Ruihan Gao, and Aniruddha Mahapatra
-                    for their helpful discussion, code reviewing, and paper reading. We thank AK, Radamés Ajna, and
-                    other HuggingFace team members for their help and support with our online demo. This work is partly
-                    supported by NSF award no. 239076, NSF grants no. IIS-1910132 and IIS-2213335.
+                    We thank .
                   </p>
                 </div>
               </div>
@@ -424,12 +431,7 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title"><a id="bibtex">BibTeX</a></h2>
-      <pre><code>@inproceedings{ge2023expressive,
-      title={Expressive Text-to-Image Generation with Rich Text},
-      author={Ge, Songwei and Park, Taesung and Zhu, Jun-Yan and Huang, Jia-Bin},
-      booktitle={IEEE International Conference on Computer Vision (ICCV)},
-      year={2023}
-}</code></pre>
+      <pre><code></code></pre>
     </div>
   </section>
 
@@ -453,50 +455,28 @@
   </footer>
 
 
-  <script type="text/javascript">
-    var currentMethodList = ['ours', 'plain', 'full', 'aae', 'ip2p', 'p2p'];
-    var currentMethod = "ours";
-
-    function ChangeMethod(idx) {
-      var li_list = document.getElementById("method-view-ul").children;
-      for (i = 0; i < li_list.length; i++) {
-        li_list[i].className = "nav-link";
-      }
-      li_list[idx].className = "nav-link active";
-      currentMethod = currentMethodList[idx];
-
-      var image_livingroom = document.getElementById('image_livingroom');
-      var image_cityscape = document.getElementById('image_cityscape');
-      image_livingroom.src = "./image_assets/footnote/livingroom/livingroom_" + currentMethod + ".jpg";
-      image_cityscape.src = "./image_assets/footnote/cityscape/cityscape_" + currentMethod + ".jpg";
-    }
-    function ChangePrompt(idx) {
-      var li_list = document.getElementById("prompt-view-ul").children;
-      for (i = 0; i < li_list.length; i++) {
-        li_list[i].className = "nav-link";
-      }
-      li_list[idx].className = "nav-link active";
-      var div_livingroom = document.getElementById('div_livingroom');
-      var div_cityscape = document.getElementById('div_cityscape');
-      if (idx == 0) {
-        div_livingroom.style.display = "";
-        div_cityscape.style.display = "none";
-      } else {
-        div_livingroom.style.display = "none";
-        div_cityscape.style.display = "";
-      }
-    }
-  </script>
-
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/jquery.event.move.js" type="text/javascript"></script>
+  <script src="./assets/js/jquery.twentytwenty.js" type="text/javascript"></script>
   <script src="./assets/js/sample.js"></script>
   <script src="./assets/js/juxtapose.js"></script>
   <script src="./assets/js/popper.min.js"></script>
-  <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script defer="" src="./assets/js/fontawesome.all.min.js"></script>
   <script src="./assets/js/bulma-carousel.min.js"></script>
   <script src="./assets/js/bulma-slider.min.js"></script>
   <script src="./assets/js/magnifier.js"></script>
+
+  <script>
+    $(window).on('load', function() {
+        $(".twentytwenty-container").twentytwenty();
+    });
+    $(function(){
+      $(".twentytwenty-container").twentytwenty();
+      // $(".twentytwenty-container", "#results-carousel").twentytwenty({default_offset_pct: 0.5, ratio: 0.5});
+    });
+  </script>
+
 
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 

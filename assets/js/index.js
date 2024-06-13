@@ -1,6 +1,6 @@
 window.HELP_IMPROVE_VIDEOJS = false;
 
-var INTERP_BASE = "./static/interpolation/stacked";
+var INTERP_BASE = "https://homes.cs.washington.edu/~kpar/nerfies/interpolation/stacked";
 var NUM_INTERP_FRAMES = 240;
 
 var interp_images = [];
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     var options = {
 			slidesToScroll: 1,
-			slidesToShow: 1,
+			slidesToShow: 2,
 			loop: true,
 			infinite: true,
 			autoplay: false,
@@ -65,13 +65,13 @@ $(document).ready(function() {
         player.currentTime = player.duration / 100 * this.value;
       })
     }, false);*/
-    preloadInterpolationImages();
+    // preloadInterpolationImages();
 
-    $('#interpolation-slider').on('input', function(event) {
-      setInterpolationImage(this.value);
-    });
-    setInterpolationImage(0);
-    $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
+    // $('#interpolation-slider').on('input', function(event) {
+    //   setInterpolationImage(this.value);
+    // });
+    // setInterpolationImage(0);
+    // $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
 
     bulmaSlider.attach();
 
