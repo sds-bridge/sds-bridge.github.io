@@ -115,10 +115,11 @@
               <source src="./video_assets/teaser/website_teaser_crop.mp4" type="video/mp4">
             </video>
 
-            <!-- 
-            <div class="is-size-5 publication-venue">
-              ICCV 2023
-            </div> -->
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                TLDR: Higher quality SDS without compromising performance.
+              </span>
+            </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
@@ -147,7 +148,7 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/SongweiGe/rich-text-to-image"
+                  <a href=""
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false"
@@ -158,16 +159,7 @@
                         </path>
                       </svg>
                     </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="https://huggingface.co/spaces/songweig/rich-text-to-image"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-edit"></i>
-                    </span>
-                    <span>Demo</span>
+                    <span>Coming Soon</span>
                   </a>
                 </span>
                 <span class="link-block">
@@ -183,27 +175,9 @@
             </div>
           </div>
         </div>
-        <!-- <div class="has-text-justified">
-          <iframe width="960" height="540" src="https://www.youtube.com/embed/ihDbAUh0LXk?si=ASIzJd_Q2Tq1pwjq" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div> -->
       </div>
     </div>
   </section>
-
-  <!-- Test Section -->
-
-  <!-- <section class="hero is-small">
-    <div class="hero-body">
-      <div class="container is-max-desktop has-text-centered">
-      <div class="container has-text-justified">
-        <video id="dollyzoom" autoplay="" muted="" loop="" playsinline="" height="100%">
-          <source src="./video_assets/teaser/website_teaserv1.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-    </div>
-  </section> -->
 
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -224,7 +198,7 @@
         <div class="column">
           <div class="content">
             <video id="dollyzoom" autoplay="" muted="" loop="" playsinline="" width="100%">
-              <source src="./video_assets/techfigure1/fig1_v4.mp4" type="video/mp4">
+              <source src="./video_assets/techfigure1/fig1_v5.mp4" type="video/mp4">
             </video>
             <div class="container has-text-justified" >
               <span style="font-size:0.85em;">SDS methods optimized images toward the natural image manifold. 
@@ -234,16 +208,12 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="hero-body" style="padding-inline: 200px;">
     <div class="container is-max-desktop">
       <div class="columns is-centered" id="div_livingroom" style="display: true;">
         <div class="column">
           <div class="content has-text-centered">
-            <!-- <img src="./image_assets/filler_image.png" id="image_livingroom" width="99%"> -->
-            <video id="dollyzoom" autoplay="" muted="" loop="" playsinline="" width="60%">
-              <source src="./video_assets/fig2.mp4" type="video/mp4">
+            <video id="dollyzoom" autoplay="" muted="" loop="" playsinline="" width="100%">
+              <source src="./video_assets/fig2_2.mp4" type="video/mp4">
             </video>
           </div>
         </div>
@@ -275,9 +245,6 @@
             to approximate the bridge. This way, we leverage the rich priors learned over their datasets.</span>
           <span style="font-size:1.1em;"> Dual Diffusion Implicit Bridges (DDIBs) compose a diffusion inversion and denoising process 
             for solving image-to-image translation problems without requiring a paired image dataset. <br><br></span>
-              <!-- <div class="content has-text-centered">
-                <img src="./image_assets/schrodinger-bridge.svg" id="image_livingroom" width="99%">
-              </div> -->
               <span style="font-size:1.1em;"> We can build a DDIB by solving the forward (noising) PF-ODE to invert the source image to the latent distribution. </span>
             <p>\[dx = [f(\mathrm{x}, t)-\frac{1}{2}g^2(t)\nabla_{\mathrm{x}} \log p_t(\mathrm{x})] dt \]</p>
             <span style="font-size:1.1em;"> We can then sample the corresponding target image by solving the reverse (denoising) PF-ODE. This deterministic conversion between
@@ -285,38 +252,39 @@
             <br>
             <div class="container has-text-centered">
               <video id="dollyzoom" autoplay="" muted="" loop="" playsinline="" width="80%">
-                <source src="./video_assets/diagrams/bridgeanimation1.mp4" type="video/mp4">
+                <source src="./video_assets/diagrams/bridgeanimation1_2.mp4" type="video/mp4">
               </video>
             </div>
-            <br><br><br>
             <span style="font-size:1.1em;">The SDS family of methods can be view as per-iteration estimates of the Schrödinger Bridge.
               This estimate is subject to the following two sources of errors:<br></span>
-            <br>
+            <br><br>
+            <span class="title is-2 publication-title" style="font-size:1.2em;">First-Order Approximation Error</span>
             <div class="container has-text-centered">
               <video id="dollyzoom" autoplay="" muted="" loop="" playsinline="" width="80%">
-                <source src="./video_assets/diagrams/bridgeanimation2.mp4" type="video/mp4">
+                <source src="./video_assets/diagrams/bridgeanimation2_2.mp4" type="video/mp4">
               </video>
             </div>
             <br>
-            <span class="title is-2 publication-title" style="font-size:1.2em;">First-Order Approximation Error. </span>
+            <!-- <span class="title is-2 publication-title" style="font-size:1.2em;">First-Order Approximation Error. </span> -->
             <span style="font-size:1.1em;"> Fully simulating this bridge involves solving two PF-ODEs, which invokes 
               dozens of neural function evaluations (NFEs) to estimate the gradient each iteration. Instead it is practical 
               to use single step estimates, which are less accurate and can induce errors. 
               Recent works ISM <a href="https://arxiv.org/abs/2311.11284">[2]</a> and SDI <a href="https://lukoianov.com/sdi/">[3]</a> 
               can be interpreted as reducing this error with a multi-step simulation to obtain \(\mathrm{x}_{\theta, t}\).<br></span>
-            <br>
+            <br><br>
+            <span class="title is-2 publication-title" style="font-size:1.2em;">Source Distribution Mismatch </span>
             <div class="container has-text-centered">
               <video id="dollyzoom" autoplay="" muted="" loop="" playsinline="" width="80%">
-                <source src="./video_assets/diagrams/bridgeanimation3.mp4" type="video/mp4">
+                <source src="./video_assets/diagrams/bridgeanimation3_2.mp4" type="video/mp4">
               </video>
             </div>
             <br>
-            <span class="title is-2 publication-title" style="font-size:1.2em;">Source Distribution Mismatch. </span>
+            <!-- <span class="title is-2 publication-title" style="font-size:1.2em;">Source Distribution Mismatch. </span> -->
             <span style="font-size:1.1em;"> The dual diffusion bridge relies on 
               \(\mathrm{\epsilon}_{\phi, \text{src}}\) accurately estimating the distribution of the current sample, 
               \(x_{\theta}\). A series of works can be viewed as improving this error <a href=https://arxiv.org/abs/2305.16213>[4, </a>
               <a href=https://arxiv.org/abs/2310.17590>5, </a><a href=https://arxiv.org/abs/2310.19415>6]</a> 
-              by computing \(\mathrm{\epsilon}_{\phi, \text{tgt}}\) more accurately. SDS (under high CFG) uses the uncondtional distribution
+              by computing \(\mathrm{\epsilon}_{\phi, \text{tgt}}\) more accurately. SDS (under high CFG) uses the unconditional distribution
               as a proxy for the current distribution, contributing to its characteristic artifacts.<br></span>
             <br>
         </p>
@@ -332,7 +300,7 @@
         <div class="column is-full-width">
             <!-- <h2 class="title is-3 has-text-centered">Text-based NeRF Optimization</h2> -->
             <div class="container has-text-centered">
-              <h2 class="title is-2 publication-title">Text-based NeRF Optimization </h2>
+              <h2 class="title is-2 publication-title" style="font-size:1.7em;">Text-based NeRF Optimization </h2>
             </div>
           </div>
         </div>
@@ -363,34 +331,34 @@
       <br><br>
       <div class="container is-max-desktop has-text-centered">
           <div class="columns is-centered">
-              <div class="column is-5">
-                  <p id="method-SDS">VSD</p>
-              </div>
-              <div class="column is-5">
-                  <p id="method-SDS">SDS</p>
-              </div>
-              <div class="column is-5">
-                  <p id="method-Ours">Ours</p>
-              </div>
+            <div class="column is-5">
+                <p id="method-SDS">SDS</p>
+            </div>
+            <div class="column is-5">
+                <p id="method-SDS">VSD</p>
+            </div>
+            <div class="column is-5">
+                <p id="method-Ours">Ours</p>
+            </div>
           </div>
       </div>
       <div class="container is-max-desktop">
       <div class="columns is-centered">
-          <div class="column is-5">
-              <video width="512" onended="this.currentTime = 0; this.play();" autoplay="" muted="" alt="Image 1" id="sect-2-sample-0">
-                <source src="./video_assets/nerf/VSD/pineapple.mp4" type="video/mp4">
-              </video>
-          </div>
-          <div class="column is-5">
-              <video width="512" onended="this.currentTime = 0; this.play();" autoplay="" muted="" alt="Image 1" id="sect-2-sample-1">
-                <source src="./video_assets/nerf/SDS/pineapple.mp4" type="video/mp4">
-              </video>
-          </div>
-          <div class="column is-5">
-              <video width="512" onended="this.currentTime = 0; this.play();" autoplay="" muted="" alt="Image 1" id="sect-2-sample-2">
-                <source src="./video_assets/nerf/Ours/pineapple.mp4" type="video/mp4">
-              </video>
-          </div>
+        <div class="column is-5">
+            <video width="512" onended="this.currentTime = 0; this.play();" autoplay="" muted="" alt="Image 1" id="sect-2-sample-1">
+              <source src="./video_assets/nerf/SDS/pineapple.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="column is-5">
+            <video width="512" onended="this.currentTime = 0; this.play();" autoplay="" muted="" alt="Image 1" id="sect-2-sample-0">
+              <source src="./video_assets/nerf/VSD/pineapple.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="column is-5">
+            <video width="512" onended="this.currentTime = 0; this.play();" autoplay="" muted="" alt="Image 1" id="sect-2-sample-2">
+              <source src="./video_assets/nerf/Ours/pineapple.mp4" type="video/mp4">
+            </video>
+        </div>
       </div>
       <div class="container is-max-desktop">
           <div class="columns is-centered is-vcentered">
